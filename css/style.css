@@ -1,0 +1,291 @@
+/* START GENERAL RULES */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.2;
+    line-height: 1.5;
+    color: #2a2a2a;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    letter-spacing: 0.9px;
+}
+
+.section-p {
+    padding: 80px 0;
+}
+
+/* END GENERAL RULES */
+
+/* START REUSABLE CLASSES */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+
+.btn {
+    height: 5rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.btn-round {
+    width: 5rem;
+    border-radius: 50%;
+    border: none;
+    background: #fb5849;
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-next,
+.btn-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-next {
+    right: 5%;
+}
+
+.btn-prev {
+    left: 5%;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+
+/* END REUSABLE CLASSES */
+
+
+/* START HEADER */
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-right: 1.5rem;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    color: inherit;
+    padding: 0.5rem 0.8rem;
+    font-family: inherit;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fb5849;
+}
+
+/* END HEADER */
+
+/* START BANNER */
+.main-banner {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content {
+    display: flex;
+    height: 100%;
+}
+
+
+.banner-text {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../images/top-left-bg.jpg) no-repeat center / cover;
+    height: 100%;
+}
+
+.banner-text h1 {
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.banner-text h5 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 3rem;
+}
+
+.banner-text h1,
+.banner-text h5 {
+    color: #fff;
+}
+
+
+.banner-slider {
+    position: relative;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slider-img {
+    height: 100%;
+}
+
+.banner-btn {
+    width: 20rem;
+    background: #fff;
+    color: #fb5849;
+}
+
+/* END BANNER */
+
+/* START ABOUT */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    padding-right: 4rem;
+    flex: 0 0 50%;
+}
+
+
+.section-heading {
+    margin-bottom: 3rem;
+}
+
+.section-heading h5 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    color: #fb5849;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 5rem;
+}
+
+
+.section-heading h5::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 4rem;
+    height: 1.5px;
+    background: #fb5849;
+}
+
+.section-heading h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+
+.about-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image .btn {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease;
+}
+
+.about-image .btn:hover {
+    box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* END ABOUT */
